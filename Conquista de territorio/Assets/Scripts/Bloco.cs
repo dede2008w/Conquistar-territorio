@@ -1,10 +1,30 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Bloco : MonoBehaviour
 {
-    private bool conquistado = false; // O bloco foi conquistado?
+    private bool Conquistado;
     private SpriteRenderer spriteRenderer;
+    private int Conquistou;
+    private bool conquistado = false; // O bloco foi conquistado?
     private int jogadorDono;
+
+
+
+    internal void Conquistar(int jogadorID)
+    {
+        throw new NotImplementedException();
+    }
+    //{if
+    //    Conquistado = true;
+    //    Color Bloco = CorDoJogador;
+
+
+
+
+
 
     void Awake()
     {
@@ -48,3 +68,5 @@ public class Bloco : MonoBehaviour
         spriteRenderer.color = novaCor;
     }
 }
+
+// }
